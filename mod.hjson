@@ -1,5 +1,5 @@
 name: "testmod"
-displayName: "" //what displays in the mod selection menu
+displayName: "name" //what displays in the mod selection menu
 author: ""
 description: ""
 version: "-"

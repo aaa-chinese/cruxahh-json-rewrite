@@ -2,12 +2,12 @@ difficulty: 9
 sector: 22
 planet: serpulo
 captureWave: 36
-//research: {
-//    parent: 
-//    objectives: [
-//    {
-//        type: SectorComplete
-//        preset: 
-//    }
-//    ]
-//}
+research: {
+    parent: tarFields
+    objectives: [
+    {
+        type: SectorComplete
+        preset: tarFields
+    }
+    ]
+}
