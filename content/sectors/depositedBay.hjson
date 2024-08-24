@@ -1,0 +1,13 @@
+difficulty: 9
+sector: 22
+planet: serpulo
+captureWave: 36
+//research: {
+//    parent: 
+//    objectives: [
+//    {
+//        type: SectorComplete
+//        preset: 
+//    }
+//    ]
+//}

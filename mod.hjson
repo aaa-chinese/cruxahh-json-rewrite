@@ -1,0 +1,6 @@
+name: "testmod"
+displayName: "" //what displays in the mod selection menu
+author: ""
+description: ""
+version: "-"
+minGameVersion: "146"
