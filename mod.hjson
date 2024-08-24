@@ -1,6 +1,7 @@
-name: "testmod"
-displayName: "name" //what displays in the mod selection menu
+name: "cruxahh json rewrite"
+displayName: "cruxahh" //what displays in the mod selection menu
 author: ""
 description: ""
 version: "-"
 minGameVersion: "146"
+hidden: true
