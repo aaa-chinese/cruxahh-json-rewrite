@@ -1,1 +1,2 @@
-buildVisibility: sandboxOnly
+//buildVisibility: sandboxOnly
+// Stormrider don't want the mod becoming too hard
