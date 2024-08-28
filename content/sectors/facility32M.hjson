@@ -2,4 +2,8 @@ difficulty: 4
 sector: 170
 planet: serpulo
 captureWave: 26
-
+research: {
+    parent: core-shard
+    objectives: [pneumaticDrill
+    ]
+}
