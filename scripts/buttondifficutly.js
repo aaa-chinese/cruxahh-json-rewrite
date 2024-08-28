@@ -6,7 +6,7 @@ Events.on(EventType.ClientLoadEvent, () => {
         Planets.serpulo.allowWaveSimulation=true;
         Blocks.launchPad.buildVisibility=BuildVisibility.campaignOnly;
     }
-    Vars.ui.menufrag.addButton("@cruxahh-difficulty-button", Icon.teamCrux,() => {
+    Vars.ui.menufrag.addButton("@cruxahh-difficulty-button", Icon.crux,() => {
         // let buf = Core.settings.getBool("cruxahh-diff");
         // buf=!buf;
         // Core.settings.put("cruxahh-diff", buf);
