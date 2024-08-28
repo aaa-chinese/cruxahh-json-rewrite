@@ -2,6 +2,6 @@ name: "cruxahh"
 displayName: "Cruxscape Takeover" //what displays in the mod selection menu
 author: "Stormrider"
 description: "A mindustry mod that makes the Serpulo with every numbered sector replaced.(not now)"
-version: "json-alpha 0.03b"
+version: "json-alpha 0.05"
 minGameVersion: "146"
 hidden: true
