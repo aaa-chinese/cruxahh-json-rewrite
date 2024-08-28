@@ -11,9 +11,10 @@ Events.on(EventType.ClientLoadEvent, () => {
         // buf=!buf;
         // Core.settings.put("cruxahh-diff", buf);
         let diffString="";
-        Core.settings.getBool("cruxahh-diff")==0?diffString="@cruxahh-difficulty-normal":diffString="@cruxahh-difficulty-hard";
+        Core.settings.getBool("cruxahh-diff")==0?diffString=Core.bundle.get("cruxahh-difficulty-normal")
+                                                :diffString=Core.bundle.get("cruxahh-difficulty-hard");
         const CSprompt = new BaseDialog("@cruxahh-difficulty-title");
-        CSprompt.cont.add("@cruxahh-difficulty-description"+diffString).row();
+        CSprompt.cont.add(Core.bundle.get("cruxahh-difficulty-description")+diffString).row();
         CSprompt.cont.button("@cruxahh-difficulty-normal",()=>{
             Core.settings.put("cruxahh-diff",false);
             Planets.serpulo.allowWaveSimulation=true;
