@@ -10,12 +10,12 @@ Events.on(EventType.ClientLoadEvent, () => {
         CSprompt.cont.add("\"NORMAL\" means normal casual campaign difficutly, while \"HARD\" disables launch pad and wave simulation.").row();
         CSprompt.cont.add("Current difficutly: "+diffString).row();
         CSprompt.cont.button("NORMAL",()=>{
-            Core.settings.put("cruxahh-diff",0);
+            Core.settings.put("cruxahh-diff",false);
             CSprompt.hide();
-        }).size(500,100).row();
+        }).size(600,75).row();
         CSprompt.cont.button("HARD",()=>{
-            Core.settings.put("cruxahh-diff",1);
+            Core.settings.put("cruxahh-diff",true);
             CSprompt.hide();
-        }).size(500,100);
+        }).size(600,75);
         CSprompt.show();
     })});
