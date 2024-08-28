@@ -4,7 +4,7 @@ planet: serpulo
 captureWave: 15
 research: {
     parent: core-shard
-    objectives: [copper-wall-large, underflow-gate, 
+    objectives: [
     {
         type: SectorComplete
         preset: groundZero
