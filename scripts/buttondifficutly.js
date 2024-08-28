@@ -11,10 +11,14 @@ Events.on(EventType.ClientLoadEvent, () => {
         CSprompt.cont.add("Current difficulty: "+diffString).row();
         CSprompt.cont.button("NORMAL",()=>{
             Core.settings.put("cruxahh-diff",false);
+            Planets.serpulo.allowWaveSimulation=true;
+            Blocks.launchPad.buildVisibility=BuildVisibility.campaignOnly;
             CSprompt.hide();
         }).size(600,75).row();
         CSprompt.cont.button("HARD",()=>{
             Core.settings.put("cruxahh-diff",true);
+            Planets.serpulo.allowWaveSimulation=false;
+            Blocks.launchPad.buildVisibility=BuildVisibility.editorOnly;
             CSprompt.hide();
         }).size(600,75);
         CSprompt.show();
