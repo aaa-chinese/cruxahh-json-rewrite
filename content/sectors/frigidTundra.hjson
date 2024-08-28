@@ -3,7 +3,7 @@ sector: 177
 planet: serpulo
 captureWave: 15
 research: {
-    parent: coreShard
+    parent: core-shard
     objectives: [
     {
         type: SectorComplete
