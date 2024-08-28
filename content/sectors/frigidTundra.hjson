@@ -2,3 +2,12 @@ difficulty: 1
 sector: 177
 planet: serpulo
 captureWave: 15
+research: {
+    parent: coreShard
+    objectives: [
+    {
+        type: SectorComplete
+        preset: groundZero
+    }
+    ]
+}
