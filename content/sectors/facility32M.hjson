@@ -4,6 +4,6 @@ planet: serpulo
 captureWave: 26
 research: {
     parent: core-shard
-    objectives: [pneumaticDrill
+    objectives: [pneumatic-drill
     ]
 }
