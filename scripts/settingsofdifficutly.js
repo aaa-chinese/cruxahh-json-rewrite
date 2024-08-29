@@ -13,24 +13,20 @@ Events.on(EventType.ClientLoadEvent, () => {
         let stringDisabled=Core.bundle.get("cruxahh-difficulty-disabled");
         const CSprompt = new BaseDialog("@cruxahh-difficulty-title");
         CSprompt.cont.add(Core.bundle.get("cruxahh-difficulty-description")).row();
-        CSprompt.cont.button(Core.bundle.get("cruxahh-difficulty-launchpad")+(Core.settings.getBool("cruxahh-laun")?stringDisabled:stringEnabled),()=>{
+        let buttonLaun = CSprompt.cont.button(Core.bundle.get("cruxahh-difficulty-launchpad")+(Core.settings.getBool("cruxahh-laun")?stringDisabled:stringEnabled),()=>{
             let buf=Core.settings.getBool("cruxahh-laun");
             if(buf)Blocks.launchPad.buildVisibility=BuildVisibility.editorOnly;
             else Blocks.launchPad.buildVisibility=BuildVisibility.campaignOnly;
             Core.settings.put("cruxahh-laun",!buf);
-            CSprompt.hide();
-            CSprompt.show();
+            buttonLaun.setText(Core.bundle.get("cruxahh-difficulty-launchpad")+(Core.settings.getBool("cruxahh-laun")?stringDisabled:stringEnabled));
         }).size(600,75).row();
-        CSprompt.cont.button(Core.bundle.get("cruxahh-difficulty-wavesim")+(Core.settings.getBool("cruxahh-wave")?stringDisabled:stringEnabled),()=>{
+        let buttonWave = CSprompt.cont.button(Core.bundle.get("cruxahh-difficulty-wavesim")+(Core.settings.getBool("cruxahh-wave")?stringDisabled:stringEnabled),()=>{
             let buf=Core.settings.getBool("cruxahh-wave");
             Planets.serpulo.allowWaveSimulation=!buf;
             Core.settings.put("cruxahh-wave",!buf);
-            CSprompt.hide();
-            CSprompt.show();
+            buttonWave.setText(Core.bundle.get("cruxahh-difficulty-wavesim")+(Core.settings.getBool("cruxahh-wave")?stringDisabled:stringEnabled));
         }).size(600,75).row();
-        CSprompt.cont.button(Core.bundle.get("cruxahh-difficulty-return"),()=>{
-            CSprompt.hide();
-        }).size(600,75);
+        CSprompt.addCloseButton();
         CSprompt.show();
     })
 
