@@ -9,8 +9,8 @@ Events.on(EventType.ClientLoadEvent, () => {
         // let buf = Core.settings.getBool("cruxahh-diff");
         // buf=!buf;
         // Core.settings.put("cruxahh-diff", buf);
-        let stringEnabled="@cruxahh-difficulty-enabled";
-        let stringDisabled="@cruxahh-difficulty-disabled"
+        let stringEnabled=Core.bundle.get("cruxahh-difficulty-enabled");
+        let stringDisabled=Core.bundle.get("cruxahh-difficulty-disabled");
         const CSprompt = new BaseDialog("@cruxahh-difficulty-title");
         CSprompt.cont.add(Core.bundle.get("cruxahh-difficulty-description")).row();
         CSprompt.cont.button(Core.bundle.get("cruxahh-difficulty-launchpad")+(Core.settings.getBool("cruxahh-laun")?stringDisabled:stringEnabled),()=>{
